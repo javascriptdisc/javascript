@@ -20,7 +20,7 @@ var person = {
 
     }
 console.log(x);
-console.log(person.fullName);
+console.log(person.fullName());
 x = person.changeValue(x);
 console.log(x);    
     
