@@ -1,5 +1,5 @@
 'use strict'
-var x = 0;
+var x = 1.1;
 
 var person = {
     Name: 'Schlomo',
@@ -15,12 +15,15 @@ var person = {
         return this.Name +' '+this.Surname;
     },
     changeValue: function(x){
-        return x+1;
+        return x*x;
     },
 
     }
 console.log(x);
-console.log(person.fullName);
-x = person.changeValue(x);
-console.log(x);    
+console.log(person.fullName());
+for(var i = 0; i < 10; i++){
+    x = person.changeValue(x);
+    console.log(x);   
+}
+ 
     
